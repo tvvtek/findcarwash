@@ -1,0 +1,143 @@
+<resources>
+    <string name="google_maps_key">AIzaSyDViixzJYm2DsvRS5301JHBD_zd-j63Ej4</string>
+    <string name="app_name">FindCarWash</string>
+    <!-- Section Start Screen -->
+    <string name="startScreenAreYouClient">Вы клиент?</string>
+    <string name="startScreenAreClientButton">Войти</string>
+    <string name="startScreenAreYouWash">Вы автомойка?</string>
+    <string name="startScreenAreWashButton">Войти</string>
+    <string name="startScreenTerms">Используя данное приложение вы принимаете условия лицензионного соглашения и соглашаетесь на сбор персональной информации</string>
+    <!-- Section SignInUser TEXT-->
+    <string name="signInUserTitle">Вход</string>
+    <string name="signInUserLogin">ЛОГИН</string>
+    <string name="signInUserPwd">ПАРОЛЬ</string>
+    <string name="signInUserGoBtn">ВОЙТИ</string>
+    <string name="signInUserRegistrationBtn">ЗАРЕГИСТРИРОВАТЬСЯ</string>
+    <string name="signInUserForgotAccess">ВОССТАНОВЛЕНИЕ ДОСТУПА</string>
+    <!-- Section SignInUser TOAST-->
+    <string name="signInUserToastErrorInet">Проверьте интернет соединение!</string>
+    <string name="signInUserToastErrorLogin">Логин или пароль введен не верно!</string>
+    <string name="signInUserToastErrorPwd">Пароль введен не верно!</string>
+    <string name="signInUserToastErrorUnknown">Неизвестная ошибка!</string>
+    <string name="signInUserToastErrorWritePreferences">Неудалось сохранить настройки!</string>
+    <string name="SignInUserToastErrorLoginLength">Логин может быть от 3 до 20 символов!</string>
+    <string name="SignInUserToastErrorPassLength">Пароль может быть от 3 до 20 символов!</string>
+
+    <!-- Section Register TEXT-->
+    <string name="registerUserHeadInfo">Регистрация</string>
+    <string name="registerUserLogin">ЛОГИН</string>
+    <string name="registerUserPwd">ПАРОЛЬ</string>
+    <string name="registerUserEmail">E-MAIL (не обязательно)</string>
+    <string name="registerUserRegisterBtn">ЗАРЕГИСТРИРОВАТЬСЯ</string>
+    <!-- Section Register TOAST-->
+    <string name="registerUserToastSuccess">Регистрация прошла успешно!</string>
+    <string name="registerUserToastErrorLogin">Логин уже существует!</string>
+    <string name="registerUserToastErrorUnknown">Неизвестная ошибка, повторите запрос позже!</string>
+    <string name="registerUserToastErrorLoginLength">Логин может быть от 3 до 20 символов!</string>
+    <string name="registerUserToastErrorPassLength">Пароль может быть от 3 до 20 символов!</string>
+    <!-- Section Catalog-->
+    <string name="catalogMinPrice">Цены от:</string>
+    <string name="catalogRepeatLoad">Повторить</string>
+    <!-- Section Chat List-->
+    <string name="chatListNoneChat">Чатов пока нет, выберите автомойку из каталога и начните чат</string>
+    <!-- Section Chat -->
+    <string name="chatScreenDisconnectInfo">Вы отключились, проверьте настройки интернета и повторите</string>
+    <string name="chatNotificationInfoMessage">Вам написал </string>
+    <string name="chatEditTextPlaceholder">Введите текст</string>
+
+
+    <!-- Section GoogleMap-->
+    <string name="mapPermissionDeniedToLocation">Разрешите приложению определять ваше местоположение!</string>
+    <!-- Section AboutWash-->
+    <string name="aboutWashMinPrice">Цены от:</string>
+    <string name="aboutWashWashAddress">Адрес:</string>
+    <string name="aboutWashWashPhone">Номер телефона:</string>
+    <string name="aboutWashButtonGoChat">Начать чат</string>
+    <string name="aboutWashButtonGoMap">Посмотреть на карте</string>
+    <string name="aboutWashButtonGoWatchReview">Посмотреть отзывы</string>
+    <string name="aboutWashButtonGoWatchAddReview">Добавить отзыв</string>
+    <!-- Section Review-->
+    <string name="reviewAddReview">Оцените автомойку</string>
+    <string name="reviewAddReviewText">Оставьте отзыв</string>
+    <string name="reviewChangeRating">Измените оценку</string>
+    <string name="reviewChangeText">Измените отзыв</string>
+    <string name="reviewSaveButton">Сохранить</string>
+    <string name="reviewSaveSuccess">Ваш отзыв сохранен!</string>
+    <!-- Section Review List -->
+    <string name="evaluationScreenListTextEmpty">Отзывов пока нет, станьте первым!</string>
+
+
+    <!-- Section Register CLIENT work screen-->
+    <string name="clientWorkScreenCatalog">Каталог</string>
+    <string name="clientWorkScreenSearchPlaceholder">Поиск</string>
+    <string name="clientWorkScreenChats">Чаты</string>
+
+
+    <!-- subSection Register CLIENT work screen MENU-->
+    <string name="clientWorkScreenMenuMyProfile">Мой профиль</string>
+    <string name="clientWorkScreenMenuContact">Связаться с нами</string>
+    <string name="clientWorkScreenMenuAbout">О приложении</string>
+    <string name="clientWorkScreenMenuExit">Выход</string>
+    <!-- Section ReviewList-->
+    <string name="evaluationsListReview">отзывы:</string>
+
+
+    <!-- WASH SECTION -->
+    <!-- subSection wash main screen MENU-->
+    <string name="washWorkScreenMenuMyProfile">Мой профиль</string>
+    <string name="washWorkScreenMenuContact">Связаться с нами</string>
+    <string name="washWorkScreenMenuAbout">О приложении</string>
+    <string name="washWorkScreenMenuExit">Выход</string>
+    <!-- section Wash sign in -->
+    <string name="washSignInAddCatalogBtn">РЕГИСТРАЦИЯ</string>
+    <string name="washSignInContact">Написать нам</string>
+    <!-- section Wash register -->
+    <string name="washRegisterTitle">Добавление в каталог</string>
+    <string name="washRegisterPhotoTitle">Добавить фото</string>
+    <string name="washRegisterLogin">ЛОГИН*</string>
+    <string name="washRegisterPassword">ПАРОЛЬ*</string>
+    <string name="washRegisterName">НАЗВАНИЕ*</string>
+    <string name="washRegisterAddress">АДРЕС*</string>
+    <string name="washRegisterPhone">ТЕЛЕФОН*</string>
+    <string name="washRegisterMinPrice">МИНИМАЛЬНАЯ СТОИМОСТЬ МОЙКИ*</string>
+    <string name="washRegisterAdditional">ДОПОЛНИТЕЛЬНО</string>
+    <string name="washRegisterAdditionalSub">Например WiFi, кафе, мойка грузовых авто и т.д.</string>
+    <string name="washRegisterPhotoText">Сделать фото</string>
+    <string name="washRegisterImageText">Выбрать из галереи</string>
+    <string name="washRegisterBtnGo">ДОБАВИТЬ</string>
+
+
+    <string name="washRegisterLoginToast">Логин должен быть от 3 до 30 символов</string>
+    <string name="washRegisterPasswordToast">Пароль должен быть от 6 до 30 символов</string>
+    <string name="washRegisterNameToast">Название должно быть от 3 до 30 символов</string>
+    <string name="washRegisterAddressToast">Адрес должен быть от 6 до 60 символов</string>
+    <string name="washRegisterPhoneToast">Телефон должен быть от 6 до 60 символов, если у вас несколько телефонов, напишите их через запятую</string>
+    <string name="washRegisterMinPriceToast">Укажите минимальную стоимость мойки</string>
+
+    <string name="washRegisterLoadImageText">Сделайте фото или выберите из галереи</string>
+    <string name="washRegisterLoadImageTextBottom">Фотографию можно добавить позже</string>
+    <string name="washRegisterLoadImageDialog">Пожалуйста подождите, загружаем изображение</string>
+    <string name="washRegisterLoadImageLoadBtn">УСТАНОВИТЬ</string>
+    <string name="washRegisterLoadImageSkipBtn">ПРОПУСТИТЬ</string>
+    <string name="washRegisterLoadImageToastError">Неизвестная ошибка, вы можете продолжить и загрузить фото позже</string>
+    <string name="washRegisterLoadImageToastErrorActivity">Ошибка логики Активити, перезагрузите приложение</string>
+
+
+
+
+    <!-- section Wash list -->
+    <string name="washListEmptyText">Вам пока еще никто не написал</string>
+
+    <!-- section About app -->
+    <string name="appAbout">Приложение предназначено для поиска и моментальной связи с автомойками посредством встроенного чата, отображением местоположения автомойки на карте, а также для просмотра отзывов и рейтинга моек.</string>
+    <string name="appAboutEmail">По дополнительным вопросам пишите на почту:info@findcarwash.ru</string>
+    <string name="appAboutEmailBody">info@findcarwash.ru</string>
+
+    <!-- section Contact app -->
+    <string name="contactApp">Если у вас есть вопросы или предложения о сотрудничестве, то свяжитесь с нами:</string>
+    <string name="contactAppTel">Номер телефона: +77076288833</string>
+    <string name="contactAppTelBody">+77076288833</string>
+
+    <string name="contactAppEmail">Почта: info@findcarwash.ru</string>
+
+</resources>

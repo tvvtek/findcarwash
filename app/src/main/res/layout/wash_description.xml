@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/aboutWashBackground"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/aboutWashDescriptionPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/default_wash"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/aboutWashDescriptionRating"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/rating_star_five"
+        android:layout_gravity="center" />
+    <TextView
+        android:id="@+id/aboutWashDescriptionDescription"
+        android:fontFamily="@font/arial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/aboutWashTextColor"
+        android:text="ВиФи, кафе" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="4"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_columnSpan="3"
+                android:fontFamily="@font/arial"
+                android:textColor="@color/aboutWashTextColor"
+                android:id="@+id/aboutWashDescriptionAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:text="Адрес: " />
+        </GridLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="4"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_columnSpan="3"
+                android:fontFamily="@font/arial"
+                android:textColor="@color/aboutWashTextColor"
+                android:id="@+id/aboutWashDescriptionPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:text="Номер телефона" />
+        </GridLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aboutWashDescriptionReviewHead"
+            android:fontFamily="@font/arial"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:text="Отзывы"
+            />
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aboutWashListReviewDescription"
+            >
+
+        </ListView>
+    </ScrollView>
+</LinearLayout>

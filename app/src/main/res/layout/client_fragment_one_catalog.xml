@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/fragment_one_catalog_base_layout"
+    android:background="@color/fragmentOneBackground"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <SearchView
+        android:id="@+id/searchWash"
+        android:queryHint="@string/clientWorkScreenSearchPlaceholder"
+        android:autofillHints="@string/clientWorkScreenSearchPlaceholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="catalogRepeatLoadButton"
+        android:id="@+id/catalogRepeatLoadButton"
+        android:background="@drawable/start_screen_wash_rectangle_button"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/catalogRepeatLoad" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:id="@+id/catalogProgressLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/catalogList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="20px">
+    </ListView>
+
+</LinearLayout>

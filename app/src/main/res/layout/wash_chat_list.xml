@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/washChatListLayout"
+    android:layout_width="match_parent"
+    android:background="@color/fragmentTwoBackground"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/chatWashList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/fragmentTwoStroke"
+        android:dividerHeight="1px" />
+
+    <TextView
+        android:id="@+id/washChatListEmpty"
+        android:text="@string/washListEmptyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/fragmentTwoTextEmptyList"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

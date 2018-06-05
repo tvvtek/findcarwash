@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Section Start screen -->
+    <color name="startScreenBackground">#c39595</color>
+    <color name="startScreenTextColor">#ffffff</color>
+    <color name="startScreenTermsTextColor">#3b3b3b</color>
+    <!-- Section Sign In screen -->
+    <color name="signInScreenBackground">#dedede</color>
+    <color name="signInScreenBtnTextColor">#ffffff</color>
+    <color name="signInScreenBtnForgotColor">#8f8d8e</color>
+    <color name="signInScreenLoadPhotoText">#a7a6a7</color>
+
+
+    <!-- Section Client Work screen -->
+    <color name="startClientWorkScreenActionBar">#953651</color>
+
+
+    <!-- Section Fragment One catalog-->
+    <color name="fragmentOneBackground">#e1e1e1</color>
+    <color name="fragmentOneBackgroundItem">#ffffff</color>
+
+    <!-- Section Fragment Two Chat list-->
+    <color name="fragmentTwoBackground">#d9d9d9</color>
+    <color name="fragmentTwoStroke">#afadad</color>
+    <color name="fragmentTwoDescriptionTextColor">#686767</color>
+    <color name="fragmentTwoBackgroundSelectItem">#a1a1a1</color>
+    <color name="fragmentTwoTextEmptyList">#615f5f</color>
+    <!-- Section EvaluationList -->
+    <color name="evaluationListBackgroundColor">#e1dcdc</color>
+    <color name="evaluationListItemStroke">#c1bebe</color>
+
+    <color name="evaluationListCircleColor">#953651</color>
+    <color name="evaluationListTextColor">#ffffff</color>
+    <color name="evaluationListEmptyTextColor">#686767</color>
+    <color name="evaluationListButtonColor">#953651</color>
+    <!-- Section AboutWash -->
+    <color name="aboutWashBackground">#ffffff</color>
+    <color name="aboutWashTextColor">#2c2c2c</color>
+    <color name="aboutWashGoChatColorBtn">#943650</color>
+    <color name="aboutWashGoChatColorBtnText">#ffffff</color>
+    <color name="aboutWashGoChatColorBtnBottom">#8d5765</color>
+    <color name="aboutWashGoChatColorBtnBottomText">#e4dbdc</color>
+    <!-- Section Chat  -->
+    <color name="chatBackground">#dedede</color>
+    <color name="chatEditTextColorText">#000000</color>
+    <color name="chatEditTextPlaceholderColorText">#dedede</color>
+    <color name="chatSendMessageBackground">#c1c1c1</color>
+    <color name="chatReceiveMessageBackground">#ffffff</color>
+    <color name="chatServiceMessageBackground">#a8ff76</color>
+    <color name="chatDateTextColor">#5d5d5d</color>
+
+
+    <!-- Section OTHER-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>

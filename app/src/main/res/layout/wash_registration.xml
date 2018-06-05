@@ -1,0 +1,147 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/signInScreenBackground"
+    android:orientation="vertical"
+    >
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/register_enter_white_main_block"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/washRegisterLogin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/register_enter_edittext"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:digits="0,1,2,3,4,5,6,7,8,9,*,QWERTYUIOPASDFGHJKLZXCVBNM_-@.+qwertzuiopasdfghjklyxcvbnm"
+                android:maxLength="30"
+                android:hint="@string/washRegisterLogin"
+                android:minEms="3"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/washRegisterPwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/register_enter_edittext"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:hint="@string/washRegisterPassword"
+                android:inputType="textVisiblePassword"
+                android:digits="0,1,2,3,4,5,6,7,8,9,*,QWERTYUIOPASDFGHJKLZXCVBNM_-@.+qwertzuiopasdfghjklyxcvbnm"
+                android:maxLength="30"
+                android:textSize="15dp" />
+            <EditText
+                android:id="@+id/washRegisterName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/register_enter_edittext"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:maxLength="30"
+                android:hint="@string/washRegisterName"
+                android:inputType="textCapSentences"
+                android:textSize="15dp" />
+            <EditText
+                android:id="@+id/washRegisterAddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/register_enter_edittext"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:maxLength="60"
+                android:hint="@string/washRegisterAddress"
+                android:inputType="textCapSentences"
+                android:textSize="15dp" />
+            <EditText
+                android:id="@+id/washRegisterPhone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/register_enter_edittext"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:hint="@string/washRegisterPhone"
+                android:digits="0123456789.,+"
+                android:inputType="phone"
+                android:textSize="15dp" />
+            <EditText
+                android:id="@+id/washRegisterMinPrice"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/register_enter_edittext"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:hint="@string/washRegisterMinPrice"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:textSize="15dp" />
+            <EditText
+                android:id="@+id/washRegisterAdditional"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/register_enter_edittext"
+                android:fontFamily="@font/arial"
+                android:maxLength="60"
+                android:gravity="center"
+                android:hint="@string/washRegisterAdditional"
+                android:inputType="textCapSentences"
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial"
+                android:text="@string/washRegisterAdditionalSub"
+                android:textSize="10dp"
+                android:layout_gravity="center"
+                />
+
+
+            <Button
+                android:id="@+id/washRegisterBtn"
+                android:onClick="washRegisterBtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/register_enter_btn_main_color"
+                android:fontFamily="@font/arial"
+                android:textColor="@color/signInScreenBtnTextColor"
+                android:textSize="15dp"
+                android:text="@string/washRegisterBtnGo" />
+            <ProgressBar
+                android:id="@+id/washRegisterProgressBar"
+                style="?android:attr/progressBarStyle"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.findcarwash.findcarwash">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:name=".AppLaunch"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- About app -->
+        <activity
+            android:name=".AppAbout"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+        <!-- Contact app -->
+        <activity
+            android:name=".AppContact"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+
+
+        <!-- Register and Sign In client  -->
+        <activity android:name=".registerorauth.ClientSignIn"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".registerorauth.ClientRegister"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+
+
+
+        <!-- Client base screen list  -->
+        <activity android:name=".workscreens.ClientWorkScreen.ClientWorkScreen"
+            android:theme="@style/CustomTheme"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+        <!-- Client About wash  -->
+        <activity
+            android:name=".workscreens.ClientFragmentOneHelpers.AboutWash"
+            android:screenOrientation="portrait"
+            android:label="AboutWash">
+        </activity>
+        <!-- Client to wash Map  -->
+        <activity android:name=".workscreens.ClientFragmentOneHelpers.Map"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+        <!--Client  Add review Wash  -->
+        <activity android:name=".workscreens.ClientFragmentOneHelpers.AddReviewWash"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+        <!-- Client to wash Evaluations  -->
+        <activity android:name=".workscreens.ClientFragmentOneHelpers.WashListReviewEvaluations"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+        <!-- Client chat list -->
+        <activity android:name=".workscreens.ChatClient.ClientChat"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+
+
+        <!-- Wash Sign in  -->
+        <activity android:name=".registerorauth.WashSingIn"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+        <!-- Wash Register  -->
+        <activity android:name=".registerorauth.WashRegistration"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".registerorauth.WashRegistrationUploadPhoto"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+
+        <!-- Wash Chat list  -->
+        <activity android:name=".workscreens.WashWorkScreens.WashChatList"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+        <!-- Wash Chat list  -->
+        <activity android:name=".workscreens.ChatWash.WashChat"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+
+
+        <!-- Firebase section services  -->
+        <service
+            android:name="ru.findcarwash.services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="ru.findcarwash.services.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

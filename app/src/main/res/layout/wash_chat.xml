@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chatBackground"
+    android:orientation="vertical">
+    <ListView
+        android:id="@+id/washChatListViewElement"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:divider="@null"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:fontFamily="@font/arial"
+            android:textColor="@color/chatEditTextColorText"
+            android:hint="@string/chatEditTextPlaceholder"
+            android:textColorHint="@color/chatEditTextPlaceholderColorText"
+            android:id="@+id/washChatMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:minHeight="45dp"
+            android:maxLines="10"
+            android:inputType="textMultiLine|textCapSentences"
+            android:layout_gravity="center"
+            android:background="@drawable/chat_edit_text_field"
+            android:layout_weight="10" />
+
+        <Button
+            android:onClick="washChatSend"
+            android:id="@+id/washChatSend"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/chat_button_send_online" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragmentTwoChatListMainLayout"
+    android:layout_width="match_parent"
+    android:background="@color/fragmentTwoBackground"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/chatList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:divider="@color/fragmentTwoStroke"
+        android:dividerHeight="1px" />
+
+    <TextView
+        android:id="@+id/fragmentTwoChatListMainLayoutEmptyList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chatListNoneChat"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/fragmentTwoTextEmptyList"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>

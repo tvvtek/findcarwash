@@ -1,0 +1,101 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/signInScreenBackground"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="320dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:background="@drawable/register_enter_white_main_block"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/clientSingInIud"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/register_enter_edittext"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:hint="@string/signInUserLogin"
+                android:inputType="textCapSentences"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/clientSingInPwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/register_enter_edittext"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:hint="@string/signInUserPwd"
+                android:inputType="textCapSentences"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/clientSingInBtn"
+                android:onClick="clientSingInBtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/register_enter_btn_main_color"
+                android:fontFamily="@font/arial"
+                android:textColor="@color/signInScreenBtnTextColor"
+                android:textSize="15dp"
+                android:text="@string/signInUserGoBtn" />
+
+            <ProgressBar
+                android:id="@+id/clientSingInProgressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-135dp"
+            android:src="@drawable/enter_icon" />
+    </FrameLayout>
+
+    <Button
+        android:fontFamily="@font/arial"
+        android:textColor="@color/signInScreenBtnTextColor"
+        android:textSize="15dp"
+        android:onClick="clientRegisterBtn"
+        android:id="@+id/clientRegisterBtn"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/register_enter_btn_main_color"
+        android:text="@string/signInUserRegistrationBtn" />
+    <Button
+        android:fontFamily="@font/arial"
+        android:textColor="@color/signInScreenBtnTextColor"
+        android:textSize="10dp"
+        android:onClick="clientForgotAccess"
+        android:id="@+id/clientForgotAccess"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/register_enter_btn_forgot"
+        android:text="@string/signInUserForgotAccess" />
+</LinearLayout>

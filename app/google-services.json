@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "882614124020",
+    "firebase_url": "https://tidy-apricot-194316.firebaseio.com",
+    "project_id": "tidy-apricot-194316",
+    "storage_bucket": "tidy-apricot-194316.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882614124020:android:a645deae06a9af04",
+        "android_client_info": {
+          "package_name": "ru.findcarwash.findcarwash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882614124020-saeb0js8l6098i7tj7bd0siu6ecq6meu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdG7FCVs38lXerhAd22xUVjDUIFMx5RgE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "882614124020-saeb0js8l6098i7tj7bd0siu6ecq6meu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,90 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/signInScreenBackground"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="320dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:background="@drawable/register_enter_white_main_block"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/clientRegisterLogin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="130dp"
+                android:background="@drawable/register_enter_edittext"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:inputType="textCapSentences"
+                android:hint="@string/registerUserLogin"
+                />
+
+            <EditText
+                android:id="@+id/clientRegisterPwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/register_enter_edittext"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:inputType="textCapSentences"
+                android:hint="@string/registerUserPwd"
+                />
+
+            <EditText
+                android:id="@+id/clientRegisterEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/register_enter_edittext"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:inputType="textCapSentences"
+                android:hint="@string/registerUserEmail"
+                />
+
+            <Button
+                android:onClick="GoClientRegister"
+                android:id="@+id/goRegisterBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/register_enter_btn_main_color"
+                android:fontFamily="@font/arial"
+                android:textColor="@color/signInScreenBtnTextColor"
+                android:textSize="15dp"
+                android:text="@string/registerUserRegisterBtn" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:id="@+id/clientRegisterProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-190dp"
+            android:src="@drawable/register_icon" />
+    </FrameLayout>
+
+</LinearLayout>
